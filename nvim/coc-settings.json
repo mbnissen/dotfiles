@@ -1,0 +1,20 @@
+{
+  "markdownlint.onSave": true,
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false
+  },
+  "git.addGBlameToVirtualText": true,
+  "eslint.autoFixOnSave": true,
+  "snippets.priority": 200,
+  "snippets.userSnippetsDirectory": "~/.config/nvim/my_snippets",
+  "snippets.ultisnips.directories": [
+    "~/.config/nvim/my_snippets"
+  ],
+  "snippets.extends": {
+    "typescript": ["javascript"]
+  },
+  "npm.binPath": "~/.asdf/installs/nodejs/14.17.3/bin/npm",
+  "node.binPath": "~/.asdf/installs/nodejs/14.17.3/bin/node"
+}
+
