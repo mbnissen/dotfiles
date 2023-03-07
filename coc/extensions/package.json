@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "coc-elixir": ">=0.7.0",
+    "coc-git": ">=2.5.3",
+    "coc-html": ">=1.7.0",
+    "coc-json": ">=1.6.1",
+    "coc-markdownlint": ">=1.26.0",
+    "coc-vimtex": ">=1.1.5",
+    "coc-eslint": ">=1.6.0"
+  },
+  "disabled": [],
+  "locked": [],
+  "lastUpdate": 1675328712598
+}

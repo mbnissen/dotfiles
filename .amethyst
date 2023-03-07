@@ -1,0 +1,243 @@
+{
+  "layouts": [
+    "tall",
+    "wide",
+    "fullscreen"
+  ],
+  "Valid modifiers are": [
+    "option",
+    "shift",
+    "control",
+    "command"
+  ],
+  "mod1": [
+    "option",
+    "shift"
+  ],
+  "mod2": [
+    "option",
+    "shift",
+    "control",
+    "command"
+  ],
+  "screens": 2,
+  "cycle-layout": {
+    "mod": "mod2",
+    "key": "r"
+  },
+  "cycle-layout-backward": {
+    "mod": "mod2",
+    "key": "t"
+  },
+  "select-tall-layout": {
+    "mod": "mod1",
+    "key": "a"
+  },
+  "select-wide-layout": {
+    "mod": "mod1",
+    "key": "s"
+  },
+  "select-fullscreen-layout": {
+    "mod": "mod1",
+    "key": "f"
+  },
+  "select-column-layout": {
+    "mod": "mod1",
+    "key": "d"
+  },
+  "focus-screen-ccw": {
+    "mod": "mod1",
+    "key": "p"
+  },
+  "focus-screen-cw": {
+    "mod": "mod1",
+    "key": "n"
+  },
+  "focus-screen-1": {
+    "mod": "mod2",
+    "key": "1"
+  },
+  "focus-screen-2": {
+    "mod": "mod2",
+    "key": "2"
+  },
+  "focus-screen-3": {
+    "mod": "mod2",
+    "key": "3"
+  },
+  "focus-screen-4": {
+    "mod": "mod1",
+    "key": "q"
+  },
+  "throw-screen-1": {
+    "mod": "mod2",
+    "key": "w"
+  },
+  "throw-screen-2": {
+    "mod": "mod2",
+    "key": "e"
+  },
+  "throw-screen-3": {
+    "mod": "mod2",
+    "key": "r"
+  },
+  "throw-screen-4": {
+    "mod": "mod2",
+    "key": "q"
+  },
+  "shrink-main": {
+    "mod": "mod2",
+    "key": "a"
+  },
+  "expand-main": {
+    "mod": "mod2",
+    "key": "d"
+  },
+  "increase-main": {
+    "mod": "mod2",
+    "key": "w"
+  },
+  "decrease-main": {
+    "mod": "mod2",
+    "key": "s"
+  },
+  "focus-ccw": {
+    "mod": "mod1",
+    "key": "a"
+  },
+  "focus-cw": {
+    "mod": "mod2",
+    "key": "f"
+  },
+  "focus-main": {
+    "mod": "mod2",
+    "key": "o"
+  },
+  "swap-screen-ccw": {
+    "mod": "mod2",
+    "key": "u"
+  },
+  "swap-screen-cw": {
+    "mod": "mod2",
+    "key": "p"
+  },
+  "swap-ccw": {
+    "mod": "mod2",
+    "key": "i"
+  },
+  "swap-cw": {
+    "mod": "mod2",
+    "key": "i"
+  },
+  "swap-main": {
+    "mod": "mod1",
+    "key": "enter"
+  },
+  "throw-space-1": {
+    "mod": "mod2",
+    "key": "1"
+  },
+  "throw-space-2": {
+    "mod": "mod2",
+    "key": "2"
+  },
+  "throw-space-3": {
+    "mod": "mod2",
+    "key": "3"
+  },
+  "throw-space-4": {
+    "mod": "mod2",
+    "key": "4"
+  },
+  "throw-space-5": {
+    "mod": "mod2",
+    "key": "5"
+  },
+  "throw-space-6": {
+    "mod": "mod2",
+    "key": "6"
+  },
+  "throw-space-7": {
+    "mod": "mod2",
+    "key": "7"
+  },
+  "throw-space-8": {
+    "mod": "mod2",
+    "key": "8"
+  },
+  "throw-space-9": {
+    "mod": "mod2",
+    "key": "9"
+  },
+  "throw-space-10": {
+    "mod": "mod2",
+    "key": "0"
+  },
+  "throw-space-left": {
+    "mod": "mod2",
+    "key": "left"
+  },
+  "throw-space-right": {
+    "mod": "mod2",
+    "key": "right"
+  },
+  "toggle-float": {
+    "mod": "mod1",
+    "key": "t"
+  },
+  "toggle-tiling": {
+    "mod": "mod2",
+    "key": "t"
+  },
+  "display-current-layout": {
+    "mod": "mod1",
+    "key": "i"
+  },
+  "reevaluate-windows": {
+    "mod": "mod1",
+    "key": "z"
+  },
+  "toggle-focus-follows-mouse": {
+    "mod": "mod2",
+    "key": "x"
+  },
+  "relaunch-amethyst": {
+    "mod": "mod2",
+    "key": "z"
+  },
+  "floating": [
+    "com.googlecode.iterm2",
+    "com.google.Chrome",
+    "com.spotify.client",
+    "com.torusknot.SourceTreeNotMAS",
+    "com.microsoft.Outlook",
+    "com.tinyspeck.slackmacgap",
+    "com.tinyapp.TablePlus",
+    "net.sourceforge.skim-app.skim",
+    "com.microsoft.teams",
+    "com.microsoft.Excel",
+    "com.tidal.desktop"
+  ],
+  "floating-is-blacklist": false,
+  "float-small-windows": true,
+  "mouse-follows-focus": false,
+  "focus-follows-mouse": false,
+  "enables-layout-hud": false,
+  "enables-layout-hud-on-space-change": false,
+  "window-margin-size": 20,
+  "window-resize-step": 5,
+  "window-margins": true,
+  "window-minimum-height": 0,
+  "window-minimum-width": 0,
+  "ignore-menu-bar": false,
+  "use-canary-build": false,
+  "new-windows-to-main": false,
+  "follow-space-thrown-windows": true,
+  "send-crash-reports": false,
+  "screen-padding-top": 0,
+  "screen-padding-bottom": 0,
+  "screen-padding-left": 0,
+  "screen-padding-right": 0,
+  "debug-layout-info": false,
+  "restore-layouts-on-launch": true
+}
