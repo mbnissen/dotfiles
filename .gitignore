@@ -1,0 +1,5 @@
+# fish
+.config/fish/fish_history
+.config/fish/fishd.*
+.config/fish/fish_variables
+.local/share/fish/generated_completions
