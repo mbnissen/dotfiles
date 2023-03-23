@@ -1,3 +1,6 @@
+# MacOS stuff
+.DS_Store
+
 # fish
 fish/fish_history
 fish/fishd.*
