@@ -6,9 +6,11 @@ local lsp = require('lsp-zero').preset({
 })
 
 lsp.ensure_installed({
-	'tsserver',
 	'elixirls',
+  'tailwindcss',
+	'tsserver',
 	'eslint',
+  'html',
 	'lua_ls'
 })
 

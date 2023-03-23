@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use('nvim-lua/plenary.nvim')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
+  use('mhinz/vim-mix-format')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',

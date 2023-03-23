@@ -173,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mbnissen/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-mix-format"] = {
+    loaded = true,
+    path = "/Users/mbnissen/.local/share/nvim/site/pack/packer/start/vim-mix-format",
+    url = "https://github.com/mhinz/vim-mix-format"
   }
 }
 
