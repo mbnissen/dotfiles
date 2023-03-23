@@ -8,7 +8,8 @@ local lsp = require('lsp-zero').preset({
 lsp.ensure_installed({
 	'tsserver',
 	'elixirls',
-	'eslint'
+	'eslint',
+	'lua_ls'
 })
 
 -- (Optional) Configure lua language server for neovim
