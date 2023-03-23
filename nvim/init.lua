@@ -1,2 +1,1 @@
 require("mbnissen")
-print("hello")
