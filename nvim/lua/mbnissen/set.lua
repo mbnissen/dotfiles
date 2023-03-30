@@ -26,5 +26,7 @@ vim.opt.updatetime = 50
 
 --vim.opt.colorcolumn = "80"
 
+vim.opt.clipboard = "unnamedplus"
+
 vim.g.mix_format_on_save = true
 
