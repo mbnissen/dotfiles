@@ -11,10 +11,15 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
   'html',
-	'lua_ls'
+	'lua_ls',
+  'terraformls'
 })
+
+require("luasnip.loaders.from_snipmate").lazy_load()
 
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
 
 lsp.setup()
+
+
