@@ -9,3 +9,8 @@ gh/hosts.yml
 op/*
 
 coc/extensions/node_modules
+
+nvim/plugin/packer_compiled.lua
+github-copilot/hosts.json
+karabiner/automatic_backups/*
+
