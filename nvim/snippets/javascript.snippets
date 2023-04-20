@@ -1,7 +1,19 @@
-snippet dir "console dir" 
+snippet cdir "console dir" 
 	console.dir(${1:item}, { colors: true })
+
+snippet descb "mocha describe"
+	describe('${1}', () => {
+		${0:${VISUAL}}
+	});
 
 snippet ita "async test"
 	it('${1}', async () => {
 		${0:${VISUAL}}
 	})
+
+snippet it "test"
+	it('${1}', () => {
+		${0:${VISUAL}}
+	})
+
+	

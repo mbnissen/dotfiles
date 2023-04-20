@@ -26,9 +26,31 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('mhinz/vim-mix-format')
   use('hashivim/vim-terraform')
-  use('github/copilot.vim')
+
+
+  -- eslint
+  use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/eslint.nvim')
   use('MunifTanjim/prettier.nvim')
+
+
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+    config = function()
+      require("nvim-tree").setup {}
+    end
+  }
+
+  use({
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    tag = "v<CurrentMajor>.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    -- install jsregexp (optional!:).
+    run = "make install_jsregexp"
+  })
 
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -44,11 +66,14 @@ return require('packer').startup(function(use)
       { 'hrsh7th/cmp-nvim-lsp' },     -- Required
       { 'hrsh7th/cmp-buffer' },       -- Optional
       { 'hrsh7th/cmp-path' },         -- Optional
-      { 'saadparwaiz1/cmp_luasnip' }, -- Optional
+      -- { 'saadparwaiz1/cmp_luasnip' }, -- Optional
       { 'hrsh7th/cmp-nvim-lua' },     -- Optional
 
+      -- Typescript
+      { 'jose-elias-alvarez/typescript.nvim' }
+
       -- Snippets
-      { 'L3MON4D3/LuaSnip' },             -- Required
+      -- { 'L3MON4D3/LuaSnip' },             -- Required
       --{ 'rafamadriz/friendly-snippets' }, -- Optional
     }
   }

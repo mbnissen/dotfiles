@@ -1,7 +1,10 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-d>", "<n-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- fetch keymap
+local map = vim.api.nvim_set_keymap
+
+map('n', 'n', ':NvimTreeToggle<CR>', {noremap=true})
 
