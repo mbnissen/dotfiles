@@ -31,7 +31,6 @@ return require('packer').startup(function(use)
   use('MunifTanjim/eslint.nvim')
   use('MunifTanjim/prettier.nvim')
 
-
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
@@ -64,7 +63,7 @@ return require('packer').startup(function(use)
       { 'hrsh7th/cmp-nvim-lsp' },     -- Required
       { 'hrsh7th/cmp-buffer' },       -- Optional
       { 'hrsh7th/cmp-path' },         -- Optional
-      -- { 'saadparwaiz1/cmp_luasnip' }, -- Optional
+      { 'saadparwaiz1/cmp_luasnip' }, -- Optional
       { 'hrsh7th/cmp-nvim-lua' },     -- Optional
 
       -- Typescript

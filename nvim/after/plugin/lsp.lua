@@ -15,14 +15,6 @@ lsp.ensure_installed({
   'terraformls'
 })
 
-lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
-end)
-
-lsp.skip_server_setup({'tsserver'})
-
-lsp.setup()
-
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
 
