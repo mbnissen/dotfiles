@@ -14,3 +14,5 @@ nvim/plugin/packer_compiled.lua
 github-copilot/hosts.json
 karabiner/automatic_backups/*
 
+raycast
+temporalio
