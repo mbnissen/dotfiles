@@ -18,7 +18,6 @@ return require('packer').startup(function(use)
 
   vim.cmd('colorscheme rose-pine')
 
-
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
   use('nvim-lua/plenary.nvim')
@@ -26,7 +25,6 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
   use('mhinz/vim-mix-format')
   use('hashivim/vim-terraform')
-
 
   -- eslint
   use('jose-elias-alvarez/null-ls.nvim')
