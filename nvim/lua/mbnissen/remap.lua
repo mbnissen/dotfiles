@@ -8,3 +8,4 @@ local map = vim.api.nvim_set_keymap
 
 map('n', '<C-n>', ':NvimTreeToggle<CR>', {})
 map('n', '<leader>ci', ':TypescriptAddMissingImports<CR>', {noremap=true})
+map('n', '<leader>ca', ':TypescriptFixAll<CR>', {noremap=true})
