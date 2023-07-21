@@ -18,3 +18,5 @@ raycast
 temporalio
 yarn
 configstore
+AWSVPNClient/*
+AWS VPN CLIENT/*
