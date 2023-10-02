@@ -1,0 +1,7 @@
+-- local null_ls = require("null-ls")
+--
+-- null_ls.builtins.formatting.prettierd.with({
+--   condition = function(utils)
+--     return utils.has_file({ ".prettierrc.json" })
+--   end,
+-- })
