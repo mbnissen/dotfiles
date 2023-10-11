@@ -1,3 +1,3 @@
 function prc
-gh pr create -r jesperborgstrup
+  gh pr create -r "endavu/backend"
 end
