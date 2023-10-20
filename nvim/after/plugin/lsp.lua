@@ -15,7 +15,8 @@ lsp_zero.format_on_save({
     ['rust_analyzer'] = { 'rust' },
     ['next-ls'] = { 'elixir' },
     ['marksman'] = { 'markdown' },
-    ['lua_ls'] = { 'lua' }
+    ['lua_ls'] = { 'lua' },
+    ['anakinls'] = { 'python' }
   }
 })
 
