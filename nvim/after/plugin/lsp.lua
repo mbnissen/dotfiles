@@ -14,7 +14,6 @@ lsp_zero.format_on_save({
     ['tsserver'] = { 'javascript' },
     ['rust_analyzer'] = { 'rust' },
     ['next-ls'] = { 'elixir' },
-    ['marksman'] = { 'markdown' },
     ['lua_ls'] = { 'lua' },
     ['anakinls'] = { 'python' }
   }
@@ -24,7 +23,7 @@ require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = { 'tsserver', 'eslint', 'html', 'lua_ls', 'terraformls', 'tailwindcss', 'marksman' },
+  ensure_installed = { 'tsserver', 'eslint', 'html', 'lua_ls', 'terraformls', 'marksman' },
   handlers = {
     lsp_zero.default_setup,
   }
@@ -32,7 +31,7 @@ require('mason-lspconfig').setup({
 
 local lspconfig = require('lspconfig')
 
-lspconfig.tailwindcss.setup {}
+lspconfig.marksman.setup {}
 
 lspconfig.eslint.setup({
   settings = {
