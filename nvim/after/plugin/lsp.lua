@@ -13,7 +13,6 @@ lsp_zero.format_on_save({
   servers = {
     ['tsserver'] = { 'javascript' },
     ['rust_analyzer'] = { 'rust' },
-    ['next-ls'] = { 'elixir' },
     ['lua_ls'] = { 'lua' },
     ['terraformls'] = { 'terraform' },
     ['anakinls'] = { 'python' }
