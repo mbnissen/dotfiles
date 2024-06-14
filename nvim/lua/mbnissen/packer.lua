@@ -45,6 +45,14 @@ return require('packer').startup(function(use)
     }
   }
 
+  use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+      "nvim-lua/plenary.nvim",
+    },
+  })
+
   -- Elixir
   use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" } })
   use('mhinz/vim-mix-format')
