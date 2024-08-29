@@ -94,4 +94,11 @@ return require('packer').startup(function(use)
       "nvim-tree/nvim-web-devicons"
     }
   }
+
+  use {
+    'Kicamon/markdown-table-mode.nvim',
+    config = function()
+      require('markdown-table-mode').setup()
+    end
+  }
 end)
