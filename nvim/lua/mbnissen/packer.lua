@@ -53,10 +53,6 @@ return require('packer').startup(function(use)
     },
   })
 
-  -- Elixir
-  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" } })
-  use('mhinz/vim-mix-format')
-
   -- Github Copilot
   use {
     "zbirenbaum/copilot.lua",
@@ -66,6 +62,19 @@ return require('packer').startup(function(use)
       require("copilot").setup({})
     end,
   }
+
+  -- Git blame
+  use {
+    'psjay/blamer.nvim',
+    config = function()
+      require('blamer').setup()
+    end
+  }
+
+  -- Elixir
+  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" } })
+  use('mhinz/vim-mix-format')
+
 
   use {
     "windwp/nvim-autopairs",
