@@ -80,11 +80,4 @@ return require('packer').startup(function(use)
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
-
-  use {
-    'Kicamon/markdown-table-mode.nvim',
-    config = function()
-      require('markdown-table-mode').setup()
-    end
-  }
 end)
