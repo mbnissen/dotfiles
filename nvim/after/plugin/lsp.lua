@@ -18,12 +18,12 @@ lsp_zero.format_on_save({
   }
 })
 
-lsp_zero.extend_lspconfig({
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
-  lsp_attach = lsp_attach,
-  float_border = 'rounded',
-  sign_text = true,
-})
+-- lsp_zero.extend_lspconfig({
+--   capabilities = require('cmp_nvim_lsp').default_capabilities(),
+--   lsp_attach = lsp_attach,
+--   float_border = 'rounded',
+--   sign_text = true,
+-- })
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
