@@ -11,7 +11,6 @@ lsp_zero.format_on_save({
     timeout_ms = 10000,
   },
   servers = {
-    ['ts_ls'] = { 'javascript' },
     ['rust_analyzer'] = { 'rust' },
     ['lua_ls'] = { 'lua' },
     ['terraformls'] = { 'terraform' },
@@ -19,11 +18,18 @@ lsp_zero.format_on_save({
   }
 })
 
+lsp_zero.extend_lspconfig({
+  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+  lsp_attach = lsp_attach,
+  float_border = 'rounded',
+  sign_text = true,
+})
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
   -- Replace the language servers listed here
   -- with the ones you want to install
-  ensure_installed = { 'ts_ls', 'eslint', 'html', 'lua_ls', 'terraformls', 'marksman' },
+  ensure_installed = { 'eslint', 'html', 'lua_ls', 'terraformls', 'marksman' },
   handlers = {
     lsp_zero.default_setup,
   }

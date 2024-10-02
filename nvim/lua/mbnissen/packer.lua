@@ -24,9 +24,18 @@ return require('packer').startup(function(use)
 
   use { "ellisonleao/gruvbox.nvim" }
 
+  -- Typescript
+  use {
+    "pmizio/typescript-tools.nvim",
+    requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    config = function()
+      require("typescript-tools").setup {}
+    end,
+  }
+
   use {
     'VonHeikemen/lsp-zero.nvim',
-    branch = 'v3.x',
+    branch = 'v4.x',
     requires = {
       --- Uncomment these if you want to manage LSP servers from neovim
       { 'williamboman/mason.nvim' },
