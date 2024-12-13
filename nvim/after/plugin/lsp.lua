@@ -1,8 +1,10 @@
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
+  local opts = { noremap = true, silent = true, buffer = bufnr }
   lsp_zero.default_keymaps({ buffer = bufnr })
   vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
+  vim.keymap.set('n', 'gl', vim.diagnostic.open_float, opts)
 end)
 
 lsp_zero.format_on_save({
