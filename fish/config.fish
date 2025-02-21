@@ -11,3 +11,5 @@ alias lg "lazygit"
 alias vimdiff "nvim -d"
 
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
+direnv hook fish | source
