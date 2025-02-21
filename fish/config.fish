@@ -10,6 +10,6 @@ end
 alias lg "lazygit"
 alias vimdiff "nvim -d"
 
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+source /opt/homebrew/opt/asdf/share/fish/vendor_completions.d/asdf.fish
 
 direnv hook fish | source
