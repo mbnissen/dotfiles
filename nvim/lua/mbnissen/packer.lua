@@ -24,34 +24,6 @@ return require('packer').startup(function(use)
 
   use { "ellisonleao/gruvbox.nvim" }
 
-  -- Typescript
-  use {
-    "pmizio/typescript-tools.nvim",
-    requires = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
-    config = function()
-      require("typescript-tools").setup {}
-    end,
-  }
-
-  use {
-    'VonHeikemen/lsp-zero.nvim',
-    branch = 'v4.x',
-    requires = {
-      --- Uncomment these if you want to manage LSP servers from neovim
-      { 'williamboman/mason.nvim' },
-      { 'williamboman/mason-lspconfig.nvim' },
-
-      { 'saadparwaiz1/cmp_luasnip' }, -- Optional
-
-      -- LSP Support
-      { 'neovim/nvim-lspconfig' },
-      -- Autocompletion
-      { 'hrsh7th/nvim-cmp' },
-      { 'hrsh7th/cmp-nvim-lsp' },
-      { 'L3MON4D3/LuaSnip' }
-    }
-  }
-
   use({
     "kdheepak/lazygit.nvim",
     -- optional for floating window border decoration
@@ -70,11 +42,6 @@ return require('packer').startup(function(use)
       require('blamer').setup()
     end
   }
-
-  -- Elixir
-  use({ "elixir-tools/elixir-tools.nvim", tag = "stable", requires = { "nvim-lua/plenary.nvim" } })
-  use('mhinz/vim-mix-format')
-
 
   use {
     "windwp/nvim-autopairs",
