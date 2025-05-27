@@ -64,16 +64,11 @@ return require('packer').startup(function(use)
   -- Github Copilot
   use "github/copilot.vim"
 
-  -- Git blame
-  use {
-    'psjay/blamer.nvim',
-    config = function()
-      require('blamer').setup()
-    end
-  }
-
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
   }
+
+  -- Git Blame
+  use "FabijanZulj/blame.nvim"
 end)
