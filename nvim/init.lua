@@ -25,3 +25,4 @@ lspconfig.eslint.setup({
 vim.lsp.enable('luals')
 vim.lsp.enable('tsserver')
 vim.lsp.enable('elixirls')
+vim.lsp.enable('terraform_lsp')

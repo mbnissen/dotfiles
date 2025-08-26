@@ -1,6 +1,6 @@
 return {
-  cmd = { "nextls", "--stdio" },
-  filetypes = { "elixir", "eelixir", "heex", "surface" },
+  cmd = { "/Users/mbnissen/elixir-ls/language_server.sh" },
+  filetypes = { "elixir", "eelixir", "heex" },
   root_markers = { '.formatter.exs', 'mix.exs' },
   on_attach = function(client, bufnr)
     -- Set up key mappings
