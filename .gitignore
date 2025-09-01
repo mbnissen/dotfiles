@@ -12,6 +12,7 @@ coc/extensions/node_modules
 
 nvim/plugin/packer_compiled.lua
 github-copilot/hosts.json
+github-copilot/apps.json
 karabiner/automatic_backups/*
 
 raycast
