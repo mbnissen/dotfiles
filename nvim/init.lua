@@ -8,6 +8,10 @@ vim.lsp.config('*', {
     vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
     vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Show References" })
+
+    vim.lsp.completion.enable(true, client.id, bufnr, {
+      autotrigger = true,
+    })
   end,
 })
 
