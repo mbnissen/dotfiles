@@ -9,24 +9,28 @@ vim.lsp.config('*', {
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
     vim.keymap.set("n", "gr", vim.lsp.buf.references, { desc = "Show References" })
 
-    vim.lsp.completion.enable(true, client.id, bufnr, {
-      autotrigger = true,
-    })
+    --vim.lsp.completion.enable(true, client.id, bufnr, {
+    --  autotrigger = true,
+    --})
   end,
 })
 
-local lspconfig = require("lspconfig")
-lspconfig.eslint.setup({
+local base_on_attach = vim.lsp.config.eslint.on_attach
+vim.lsp.config("eslint", {
   on_attach = function(client, bufnr)
-    -- Format on save
+    if not base_on_attach then return end
+
+    base_on_attach(client, bufnr)
     vim.api.nvim_create_autocmd("BufWritePre", {
       buffer = bufnr,
-      command = "EslintFixAll",
+      command = "LspEslintFixAll",
     })
   end,
 })
 
+vim.lsp.enable('eslint')
+
+vim.lsp.enable 'elixirls'
 vim.lsp.enable('luals')
 vim.lsp.enable('vtsls')
-vim.lsp.enable('elixirls')
 vim.lsp.enable('terraform_lsp')
