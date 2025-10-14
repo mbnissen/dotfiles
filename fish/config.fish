@@ -25,3 +25,4 @@ end
 set --erase _asdf_shims
 
 direnv hook fish | source
+fish_add_path $HOME/.local/bin
