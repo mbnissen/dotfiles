@@ -21,3 +21,5 @@ yarn
 configstore
 AWSVPNClient/*
 AWS VPN CLIENT/*
+
+fish_variables.*
