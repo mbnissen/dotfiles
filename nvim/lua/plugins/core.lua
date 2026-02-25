@@ -16,6 +16,30 @@ return {
       colorscheme = "gruvbox",
     },
   },
+  -- customize snacks explorer: <C-n> to toggle, <C-p> opens file finder
+  {
+    "folke/snacks.nvim",
+    keys = {
+      { "<C-n>", function() Snacks.explorer({ cwd = LazyVim.root() }) end, desc = "Explorer Snacks (root dir)" },
+      { "<leader>e", false },
+      { "<leader>E", false },
+    },
+    opts = {
+      picker = {
+        sources = {
+          explorer = {
+            win = {
+              list = {
+                keys = {
+                  ["<c-p>"] = { "picker_files", desc = "Find Files", mode = { "n", "i" } },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
@@ -26,11 +50,6 @@ return {
         "<leader>fp",
         function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
         desc = "Find Plugin File",
-      },
-      {
-        "<C-p>",
-        LazyVim.pick("files"),
-        desc = "Find Files",
       },
     },
     -- change some options
