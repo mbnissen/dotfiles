@@ -1,4 +1,11 @@
 return {
+  -- load snipMate-format snippets from snippets/
+  {
+    "L3MON4D3/LuaSnip",
+    config = function()
+      require("luasnip.loaders.from_snipmate").lazy_load()
+    end,
+  },
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 

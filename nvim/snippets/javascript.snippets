@@ -1,0 +1,26 @@
+snippet lg "console log" 
+	console.log(${1:item});
+
+snippet cdir "console dir" 
+	console.dir(${1:item}, { colors: true, depth: 5 })
+snippet cdirs "console dir object as string" 
+	console.dir(convertValuesToString(${1:item}), { colors: true, depth: 5 })
+
+snippet descb "mocha describe"
+	describe('${1}', () => {
+		${0:${VISUAL}}
+	});
+
+snippet ita "async test"
+	it('${1}', async () => {
+		${0:${VISUAL}}
+	})
+
+snippet it "test"
+	it('${1}', () => {
+		${0:${VISUAL}}
+	})
+	
+snippet sleep "sleep"
+	await new Promise(r => setTimeout(r, ${1}));
+
