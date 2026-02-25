@@ -22,4 +22,4 @@ configstore
 AWSVPNClient/*
 AWS VPN CLIENT/*
 
-fish_variables.*
+fish_variables*
