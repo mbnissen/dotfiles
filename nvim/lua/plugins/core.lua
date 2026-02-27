@@ -1,4 +1,37 @@
 return {
+  -- disable prettier for JS/TS files so eslint handles formatting
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        javascript = {},
+        javascriptreact = {},
+        typescript = {},
+        typescriptreact = {},
+      },
+    },
+  },
+  -- auto-fix eslint issues on save
+  {
+    "neovim/nvim-lspconfig",
+    init = function()
+      local base_on_attach = vim.lsp.config.eslint and vim.lsp.config.eslint.on_attach
+      vim.lsp.config("eslint", {
+        on_attach = function(client, bufnr)
+          if base_on_attach then
+            base_on_attach(client, bufnr)
+          end
+
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = bufnr,
+            callback = function()
+              vim.lsp.buf.format({ name = "eslint", async = false })
+            end,
+          })
+        end,
+      })
+    end,
+  },
   -- load snipMate-format snippets from snippets/
   {
     "L3MON4D3/LuaSnip",
