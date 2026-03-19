@@ -1,9 +1,13 @@
 return {
-  -- disable prettier for JS/TS files so eslint handles formatting
+  -- use mix format for elixir (reads .formatter.exs)
+  -- no conform formatters for JS/TS — eslint LSP handles it via lsp_format fallback
   {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
+        elixir = { "mix" },
+        heex = { "mix" },
+        eex = { "mix" },
         javascript = {},
         javascriptreact = {},
         typescript = {},
@@ -11,26 +15,24 @@ return {
       },
     },
   },
-  -- auto-fix eslint issues on save
+  -- disable formatting on the TS LSP so eslint LSP is used as the fallback formatter
   {
     "neovim/nvim-lspconfig",
-    init = function()
-      local base_on_attach = vim.lsp.config.eslint and vim.lsp.config.eslint.on_attach
-      vim.lsp.config("eslint", {
-        on_attach = function(client, bufnr)
-          if base_on_attach then
-            base_on_attach(client, bufnr)
-          end
-
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            buffer = bufnr,
-            callback = function()
-              vim.lsp.buf.format({ name = "eslint", async = false })
-            end,
-          })
-        end,
-      })
-    end,
+    opts = {
+      servers = {
+        vtsls = {
+          on_attach = function(client)
+            client.server_capabilities.documentFormattingProvider = false
+            client.server_capabilities.documentRangeFormattingProvider = false
+          end,
+        },
+        eslint = {
+          settings = {
+            workingDirectories = { mode = "auto" },
+          },
+        },
+      },
+    },
   },
   -- load snipMate-format snippets from snippets/
   {
