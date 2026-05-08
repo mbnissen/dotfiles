@@ -1,6 +1,6 @@
 {
   "active_pack": "peon",
-  "volume": 0.5,
+  "volume": 0.0,
   "enabled": true,
   "categories": {
     "session.start": true,
@@ -16,5 +16,8 @@
   "spam_threshold": 3,
   "spam_window_seconds": 10,
   "pack_rotation": [],
-  "debounce_ms": 500
+  "debounce_ms": 500,
+  "default_pack": "futurama_bender",
+  "desktop_notifications": true,
+  "pack_rotation_mode": "random"
 }
